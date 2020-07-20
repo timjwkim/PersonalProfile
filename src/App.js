@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from './Home/Home.js';
+import About from './About/About.js';
+import Experience from './Experience/Experience.js';
+import Projects from './Projects/Projects.js';
+import Skills from './Skills/Skills.js';
+import Fun from './Fun/Fun.js';
+import Contact from './Contact/Contact.js';
+import Leftbar from './Sidebars/Leftbar.js';
+import Rightbar from './Sidebars/Rightbar.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render () {
+    return (
+      <div className="App">
+        <div className="Top">
+          <Home/>
+        </div>
+        <div className="Bottom">
+          <div className="Sidebar">
+            <Leftbar/>
+          </div>
+          <div className="Main">
+            <About/>
+            <Experience/>
+            <Projects/>
+            <Skills/>
+            <Fun/>
+            <Contact/>
+          </div>
+          <div className="Sidebar">
+            <Rightbar/>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

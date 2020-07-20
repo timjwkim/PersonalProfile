@@ -1,0 +1,11 @@
+.Left {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin-left: 60%;
+}
+
+.Right {
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  margin-left: 40%;
+}

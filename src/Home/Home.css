@@ -1,0 +1,14 @@
+.Home {
+  min-height: 100vh;
+  background-color: DodgerBlue;
+  text-align: center;
+}
+
+.Name {
+  padding-top: 20vh;
+  font-size: 800%;
+}
+
+.Description {
+  font-size: 200%;
+}
