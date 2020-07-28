@@ -5,7 +5,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="Projects">
-        Here are some finished projects!
+        Here are some personal projects that I have worked on!
       </div>
     )
   }
